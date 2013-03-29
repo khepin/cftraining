@@ -1,0 +1,10 @@
+{
+  "name": "cftraining",
+  "version": "1.0.0",
+  "main": "cftraining.js",
+  "dependencies": {
+  },
+  "devDependencies": {
+    "jasmine": "*"
+  }
+}
