@@ -3,7 +3,7 @@ function CRMFactory() {
 };
 
 CRMFactory.prototype.isEmployee = function (name) {
-    return true;
+    return Math.random()*10 > 5;
 };
 
 CRMFactory.prototype.getType = function() {
