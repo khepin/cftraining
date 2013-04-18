@@ -4,11 +4,48 @@ describe("CRMFactory", function() {
         expect(cf.getType()).toBe('company');
     });
 
-    it("knows who is an employee", function() {
-        var cf = new CRMFactory();
-        expect(cf.isEmployee('sebastien.armand')).toBe(true);
+    describe("has", function(){
+        it("an employee named Sebastien Armand", function(){
+            var cf = new CRMFactory();
+            expect(cf.isEmployee('sebastien.armand')).toBe(true);
+        });
     });
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**
+ * Boiler plate code to run the tests described above
+ */
+
 
 (function() {
     var jasmineEnv = jasmine.getEnv();
