@@ -4,12 +4,16 @@ describe("CRMFactory", function() {
         expect(cf.getType()).toBe('company');
     });
 
-    describe("has", function(){
-        it("an employee named Sebastien Armand", function(){
-            var cf = new CRMFactory();
-            expect(cf.isEmployee('sebastien.armand')).toBe(true);
-        });
+    it("has an employee named Sebastien Armand", function(){
+        var cf = new CRMFactory();
+        expect(cf.isEmployee('sebastien.armand')).toBe(true);
     });
+
+    it("does not have an employee named Meow Cat", function(){
+        var cf = new CRMFactory();
+        expect(cf.isEmployee('meow.cat')).toBe(false);
+    });
+
 });
 
 
