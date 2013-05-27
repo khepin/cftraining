@@ -15,6 +15,10 @@ CRMFactory.prototype.isEmployee = function (name) {
     return false;
 };
 
+CRMFactory.prototype.getEmployees = function() {
+    return this.employees;
+};
+
 CRMFactory.prototype.getType = function() {
     return this.type;
 };

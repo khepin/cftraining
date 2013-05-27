@@ -14,11 +14,14 @@ describe("CRMFactory", function() {
         expect(cf.isEmployee('meow.cat')).toBe(false);
     });
 
+    it("has a whole list of employees", function(){
+        var cf = new CRMFactory();
+        // Note how intuitive it is in JavaScript to test if something is an array!!!
+        // I mean ... seriously...
+        expect(toString.call(cf.getEmployees())).toBe('[object Array]');
+    });
+
 });
-
-
-
-
 
 
 
