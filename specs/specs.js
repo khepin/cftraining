@@ -18,7 +18,12 @@ describe("CRMFactory", function() {
         var cf = new CRMFactory();
         // Note how intuitive it is in JavaScript to test if something is an array!!!
         // I mean ... seriously...
-        expect(toString.call(cf.getEmployees())).toBe('[object Array]');
+        var employees = cf.getEmployees();
+        expect(toString.call(employees)).toBe('[object Array]');
+
+        for (var i = 0; i < employees.length; i++) {
+            expect(toString.call(employees[i])).toBe('[object String]');
+        }
     });
 
 });
