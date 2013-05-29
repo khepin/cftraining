@@ -1,6 +1,6 @@
 function CRMFactory() {
     this.type = 'company';
-
+this.type = 'dog';
     this.employees = [
         'sebastien.armand'
     ]
