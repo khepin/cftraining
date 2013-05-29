@@ -2,7 +2,7 @@ function CRMFactory() {
     this.type = 'company';
 
     this.employees = [
-        'sebastien.armand'
+		{'Shawn Kuan', 'Developer'}
     ]
 };
 
